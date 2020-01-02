@@ -5,3 +5,10 @@ A robot lands on Mars, which happens to be a cartesian grid; assuming that we ha
 Here is an example output with command `"FF"`:
 
 `[0, 2]`
+
+## Initial Thoughts : 
+Since we have been given with L, R and F as the valid command, we will keep updating direction and co-ordinates throughout the application.
+   
+
+
+
