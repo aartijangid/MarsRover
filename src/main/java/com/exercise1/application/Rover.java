@@ -1,4 +1,4 @@
-package com.rt.excercise1;
+package com.exercise1.application;
 
 import java.util.Arrays;
 import java.util.Scanner;
