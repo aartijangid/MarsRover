@@ -1,61 +1,56 @@
 package com.exercise1.application;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Rover {
-    int x;
-    int y;
-    int direction = 0;
-    int[] coordinates = {x,y};
 
-    public int[] move(String inputCommand) {
-        x = 0;
-        y = 0;
-        String[] inputs = inputCommand.split("");
+    private static Position position;
+
+    public void move(String inputInstruction) {
+        String[] inputs = inputInstruction.split("");
+        position = new Position();
+        System.out.println("X: " + position.x + " Y: " + position.y + " direction: " + position.currentDirection);
+
+
         for (int i = 0; i < inputs.length; i++) {
             setDirection(inputs[i]);
-            if(inputs[i].equals("F")) {
-                if (direction == 0)
-                    x++;
-                else if(direction == 90)
-                    y++;
-                else if(direction == 180)
-                    x--;
-                else if(direction == 270)
-                    y--;
+            if(inputs[i].equals(Instruction.FORWARD.getValue())) {
+                Forward forward = new Forward(position);
+                forward.execute();
             }
         }
-        coordinates = new int[]{x, y};
-        return coordinates;
     }
 
-    private void setDirection(String inputCommand) {
-        if (inputCommand.equals("L"))
-            direction += 90;
-        else if (inputCommand.equals("R"))
-            if(direction == 0)
-                direction = 270;
-            else
-                direction -= 90;
+    private void setDirection(String inputInstruction) {
+        if (inputInstruction.equals(Instruction.LEFT.getValue())) {
+            TurnLeft turnLeft = new TurnLeft(position);
+            turnLeft.execute();
+        }
+        else if (inputInstruction.equals(Instruction.RIGHT.getValue())) {
+            TurnRight turnRight = new TurnRight(position);
+            turnRight.execute();
+        }
+    }
 
+    private void displayPosition() {
+        System.out.println(position.x + " " + position.y);
     }
 
     public static void main( String[] args )
     {
-        int[] position = new int[0];
         String instruction;
         Rover rover = new Rover();
+
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
                 System.out.print("Enter instruction: ");
-                instruction = scanner.nextLine();
-                if(instruction.matches("[LRFlrf]+")) {
-                    position = rover.move(instruction);
-                    System.out.println(Arrays.toString(position));
+                instruction =  scanner.nextLine();
+                if(instruction.matches("[LRF]+")) {
+                    rover.move(instruction);
+                    rover.displayPosition();
                 }
                 else
-                    System.out.println("Please enter valid instruction.");
+                    System.out.println("Skipping invalid instruction: " + instruction);
             }
         }
     }

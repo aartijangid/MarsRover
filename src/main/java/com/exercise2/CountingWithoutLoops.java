@@ -16,6 +16,7 @@ public class CountingWithoutLoops {
             return;
 
         countUpAndDown(start+1, end);
+
         System.out.println(start);
 
         return;
@@ -25,6 +26,7 @@ public class CountingWithoutLoops {
         CountingWithoutLoops countingWithoutLoops = new CountingWithoutLoops();
         System.out.println("countUp:");
         countingWithoutLoops.countUp(0, 5);
+
         System.out.println("countUpAndDown:");
         countingWithoutLoops.countUpAndDown(0,5);
     }

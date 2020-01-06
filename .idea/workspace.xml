@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2addac2-0b44-4a72-b808-765e183ed254" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/exercise1/application/RoverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rt/excercise1/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise1/application/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rt/excercise1/RoverTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rt/excercise1/Rover.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rt/excercise1/RoverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise1/application/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise1/application/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise2/CountingWithoutLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise2/CountingWithoutLoops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise1/application/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise1/application/RoverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exercise1/application/Rover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exercise1/application/Rover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exercise2/CountingWithoutLoops.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exercise2/CountingWithoutLoops.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/exercise1/application/RoverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/exercise1/application/RoverTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -36,7 +37,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vl3uzoEWcplrYnErA6YfsV7DEx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -45,6 +48,8 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.4961665" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -66,26 +71,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="CountingWithoutLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.exercise2.CountingWithoutLoops" />
-      <module name="mars-rover" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exercise2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Rover (1)">
     <configuration name="Rover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rt.excercise1.Rover" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise1.application.Rover" />
       <module name="mars-rover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rt.excercise1.*" />
+          <option name="PATTERN" value="com.exercise1.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +89,12 @@
       <module name="mars-rover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rt.excercise1.*" />
+          <option name="PATTERN" value="com.exercise1.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rt.excercise1" />
-      <option name="MAIN_CLASS_NAME" value="com.rt.excercise1.RoverTest" />
+      <option name="PACKAGE_NAME" value="com.exercise1.application" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise1.application.RoverTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,29 +104,45 @@
       <module name="mars-rover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rt.excercise1.*" />
+          <option name="PATTERN" value="com.exercise1.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rt.excercise1" />
-      <option name="MAIN_CLASS_NAME" value="com.rt.excercise1.RoverTest" />
+      <option name="PACKAGE_NAME" value="com.exercise1.application" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise1.application.RoverTest" />
       <option name="METHOD_NAME" value="givenInputF_ShouldReturnCoordinates_10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoverTest.givenInputLFFFRFFFRRFFF_ShouldReturnCoordinates_03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoverTest.givenInputLRF_ShouldReturnCoordinates_neg10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mars-rover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rt.excercise1.*" />
+          <option name="PATTERN" value="com.exercise1.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rt.excercise1" />
-      <option name="MAIN_CLASS_NAME" value="com.rt.excercise1.RoverTest" />
-      <option name="METHOD_NAME" value="givenInputLFFFRFFFRRFFF_ShouldReturnCoordinates_03" />
+      <option name="PACKAGE_NAME" value="com.exercise1.application" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise1.application.RoverTest" />
+      <option name="METHOD_NAME" value="givenInputLRF_ShouldReturnCoordinates_neg10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoverTest.givenInputRF_ShouldReturnCoordinates_0neg1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mars-rover" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exercise1.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exercise1.application" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise1.application.RoverTest" />
+      <option name="METHOD_NAME" value="givenInputRF_ShouldReturnCoordinates_0neg1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountingWithoutLoops" />
-        <item itemvalue="JUnit.RoverTest" />
-        <item itemvalue="Application.Rover" />
-        <item itemvalue="JUnit.RoverTest.givenInputF_ShouldReturnCoordinates_10" />
-        <item itemvalue="JUnit.RoverTest.givenInputLFFFRFFFRRFFF_ShouldReturnCoordinates_03" />
+        <item itemvalue="Application.Rover (1)" />
+        <item itemvalue="JUnit.RoverTest.givenInputLRF_ShouldReturnCoordinates_neg10" />
+        <item itemvalue="JUnit.RoverTest (1)" />
+        <item itemvalue="JUnit.RoverTest.givenInputRF_ShouldReturnCoordinates_0neg1" />
+        <item itemvalue="JUnit.RoverTest.givenInputF_ShouldReturnCoordinates_10 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +189,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/exercise2/CountingWithoutLoops.java</url>
           <line>13</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/exercise1/application/Rover.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

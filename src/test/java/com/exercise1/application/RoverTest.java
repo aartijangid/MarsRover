@@ -48,6 +48,26 @@ class RoverTest {
     }
 
     @Test
+    public void givenInputLRF_ShouldReturnCoordinates_0neg1() {
+        // given
+        String inputInstruction = "LLLF";
+        int[] expectedPosition = {0, -1};
+        rover = new Rover();
+        // then
+        assertArrayEquals(expectedPosition, rover.move(inputInstruction));
+    }
+
+    @Test
+    public void givenInputLRF_ShouldReturnCoordinates_neg10() {
+        // given
+        String inputInstruction = "RRRF";
+        int[] expectedPosition = {0, 1};
+        rover = new Rover();
+        // then
+        assertArrayEquals(expectedPosition, rover.move(inputInstruction));
+    }
+
+    @Test
     public void givenInputLFFFRFFFRRFFF_ShouldReturnCoordinates_03(){
         // given
         String inputInstruction = "LFFFRFFFRRFFF";
